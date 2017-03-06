@@ -70,12 +70,27 @@ for(var i=0; i<opciones1.length; i++) {
     break;
   } else {
     alert("Debe seleccionar alguna respuesta de la primera pregunta");
+    return false;
   }
 }
-
-/*if(!seleccionado) {
-  return false;
-}*/
+for(var i=0; i<opciones2.length; i++) {
+  if(opciones2[i].checked) {
+    seleccionado = true;
+    break;
+  } else {
+    alert("Debe seleccionar alguna respuesta de la segunda pregunta");
+    return false;
+  }
+}
+for(var i=0; i<opciones3.length; i++) {
+  if(opciones3[i].checked) {
+    seleccionado = true;
+    break;
+  } else {
+    alert("Debe seleccionar alguna respuesta de la tercera pregunta");
+    return false;
+  }
+}
 }
 
 /*    }
@@ -90,6 +105,6 @@ function revisarQ1 (){
 //  si selecciono el radioboton 1 en la primera pregunta es correcto y suma 1 en el contador sino 0
 //  si selecciono el radioboton 2 en la segunda pregunta es correcto...
 // si selecciono el radioboton 3 en la tercera pregunta es correcto...Al final retorna un texto con el numero de rptas correctas y desaparece el quiz
-
+if( opciones1[0])
 
 }
