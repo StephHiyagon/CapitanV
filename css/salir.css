@@ -1,0 +1,14 @@
+body {
+  background: #ffc507;
+}
+
+#salir {
+position: absolute;
+top: 50%;
+display: table-cell;
+vertical-align: middle;
+margin: auto;
+text-align:center;;
+width:400px;
+font-size: 42px;
+}

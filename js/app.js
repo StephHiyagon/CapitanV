@@ -21,7 +21,12 @@ function mostrarS1(event){
 s1.addEventListener("click", mostrarS1);*/
 //var preg1= document.
 
+window.addEventListener('load',function(){
 
+  var nombre = prompt("Ingrese su nombre");
+  console.log(nombre);
+  document.getElementById('n').innerHTML = nombre;
+})
 
 var mostarOcultar = function(divtexte) {
 	var divtext = document.getElementById(divtexte);
@@ -32,22 +37,51 @@ var mostarOcultar = function(divtexte) {
 	}
 }
 
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			}
+		}
+	}
+}
+
 function validar(){
-  var rp1 = document.getElementsByClassName('transporte').value;
-  var rp2= document.getElementById('r2').value;
-  var rp3 = document.getElementById('r3').value;
-  console.log(rp1);
-  alert("Si estas validando");
-  if(rp1 == 0 || rp2 == 0 || rp3== 0){
-    alert("Seleccione alguna respuesta de la pregunta 1");
-    return false;
-  }else{
-    return true;
+var opciones = document.getElementsByName("name");
+console.log(opciones[0]);
+var seleccionado = false;
+for(var i=0; i<opciones.length; i++) {
+  if(opciones[i].checked) {
+    seleccionado = true;
+    break;
   }
 }
 
+if(!seleccionado) {
+  return false;
+}
+}
+
+/*    }
+
+    return revisar1();
+  }*/
+
+
 /*
-function revisar (){
+function revisar1 (){
   var contador=0;
+  var preg1 = document.getElementById('p1');
+  var preg2 = document.getElementById('p2');
+  var preg3 = document.getElementById('p3');
 
 }*/
