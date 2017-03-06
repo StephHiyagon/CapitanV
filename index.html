@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CapitanV.0.0.1</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,7 +13,69 @@
 <h1>¿Qué es Laboratoria?</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <h4>Temas</h4>
-<button type="button" name="button">Sprint 1</button> <button type="button" name="button">Sprint 2</button> <button type="button" name="button">Sprint 3</button>
+<!--<button type="button" name="button" id="s1">Sprint 1</button> <button type="button" name="button" id="s2">Sprint 2</button> <button type="button" name="button" id="s3">Sprint 3</button><br>
+<div id="imprime" for="imprime"></div>-->
+<input type="button" value="Sprint 1" onclick="mostarOcultar('text1')" >
+<input type="button" value="Sprint 2" onclick="mostarOcultar('text2')">
+<input type="button" value="Sprint 3" onclick="mostarOcultar('text3')">
+
+<div id="text1">  <h2>Sprint 1: Introducción a JavaScript</h2>
+                      <ol>
+                        <li>Fundamentos de la Programación</li>
+                        <li>Funciones</li>
+                        <li>Arreglos</li>
+                        <li>Objetos</li>
+                      </ol>
+                      <hr></hr>
+                      <h3>Quiz</h3>
+                      <p id="p1">Existen 2 tipos de funciones<p>
+
+                          <input type="radio" clase="respuesta" value="1" id="r1">Expresadas y declaradas<br>
+                          <input type="radio" clase="respuesta" value="2"id="r2">Explícitas y declaradas<br>
+                          <input type="radio" clase="respuesta" value="3" id="r3">Expresadas y derivadas<br>
+
+                      <p id="p2">Elige una propiedad de los arreglos<p>
+
+                          <input type="radio" clase="respuesta" value="1" id="r4">Clear<br>
+                          <input type="radio" clase="respuesta" value="2" id="r5">Pop<br>
+                          <input type="radio" clase="respuesta" value="3" id="r6">Add<br>
+
+                      <p id="p3">Un objeto tiene _______ y _______<p>
+
+                          <input type="radio" clase="respuesta" value="1" id="r7">Números y letras<br>
+                          <input type="radio" clase="respuesta" value="2"id="r8">Partes y validaciones<br>
+                          <input type="radio" clase="respuesta" value="3"id="r9">Propiedades y valores<br>
+
+
+
+<button type="button" name="button" onclick="validar()">Enviar</button>
+</div>
+<div id="text2"><h2>Sprint 2: Introducción al desarrollo web y construcción de páginas web</h2>
+                      <ol>
+                        <li>Ciclos de vida del desarrollo web y arquitectura básica cliente/servidor/configuración del ambiente de trabajo e introducción al git</li>
+                        <li>HTML y JavaScript en el navegador</li>
+                        <li>Manejo de comandos b´sicos del git en la terminal</li>
+                        <li>Pruebas unitarias</li>
+                        <li>Git / Resolución de conflictos / Branching model</li>
+                        <li>DOM</li>
+                      </ol>
+                      <hr></hr>
+                      <h3>Quiz</h3>
+                      <p>Cúal es el comando para iniciar un repositorio desde la consola<p>
+                        <input type="radio" name="transporte" value="1">git init .<br>
+                        <input type="radio" name="transporte" value="2">git init<br>
+                        <input type="radio" name="transporte" value="3">git add<br>
+                      <p>Cúal es la finalidad de hacer una prueba unitaria<p>
+                        <input type="radio" name="transporte" value="1">Comprobar que el código funciona correctamente<br>
+                        <input type="radio" name="transporte" value="2">Darle valores a los parametros de dichas funciones<br>
+                        <input type="radio" name="transporte" value="3">No tiene ningún fin<br>
+                      <p>¿Qué significa DOM?<p>
+                        <input type="radio" name="transporte" value="1">Dual Object Model<br>
+                        <input type="radio" name="transporte" value="2">Document Object Model<br>
+                        <input type="radio" name="transporte" value="3">Document Obsolet Model<br>
+                      <button type="button" name="button">Enviar</button>
+</div><br>
+<div id="text3">No hay todavía lecciones</div>
   <script src="js/app.js"></script>
 </body>
 </html>
