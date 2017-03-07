@@ -99,7 +99,7 @@ for(var i=0; i<opciones3.length; i++) {
   }*/
 
 
-
+/*
 function revisarQ1 (){
   var contador=0;
 //  si selecciono el radioboton 1 en la primera pregunta es correcto y suma 1 en el contador sino 0
@@ -107,4 +107,4 @@ function revisarQ1 (){
 // si selecciono el radioboton 3 en la tercera pregunta es correcto...Al final retorna un texto con el numero de rptas correctas y desaparece el quiz
 if( opciones1[0])
 
-}
+}*/
